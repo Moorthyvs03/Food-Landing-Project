@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Footer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+  background: #fff2e9;
+  padding: 60px 20px 0;
+  color: #6b5c8b;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+  color: #5d3a9b;
+  margin-bottom: 15px;
+}
+
+.logo span {
+  color: #5d3a9b;
+}
+
+.footer-box p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* SOCIAL */
+.social-icons a {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #cbb6e3;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b5c8b;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #5d3a9b;
+  color: #fff;
+}
+
+/* TITLES */
+.footer-box h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #1f174f;
+}
+
+/* LIST */
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box ul li {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+/* CONTACT */
+.contact li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.contact i {
+  color: #5d3a9b;
+  margin-top: 4px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  display: flex;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.newsletter input {
+  border: none;
+  outline: none;
+  padding: 14px;
+  flex: 1;
+}
+
+.newsletter button {
+  border: none;
+  background: #5d3a9b;
+  color: #fff;
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e2d3f2;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+<body>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LOGO + ABOUT -->
+    <div class="footer-box">
+      <h2 class="logo">
+        <i class="fa-solid fa-stethoscope"></i> Dotus<span>.</span>
+      </h2>
+      <p>
+        For the most part, text messaging should be considered safe and
+        effective. There are many ways that texting can improve
+        communication.
+      </p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="footer-box">
+      <h3>Company</h3>
+      <ul>
+        <li>About Us</li>
+        <li>Newsroom</li>
+        <li>Services</li>
+        <li>Department</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <ul class="contact">
+        <li><i class="fa-solid fa-location-dot"></i> 7 Green Lake Street<br>Crawfordsville, IN 47933</li>
+        <li><i class="fa-solid fa-phone"></i> +1 800 123 456 789</li>
+        <li><i class="fa-solid fa-envelope"></i> Dotus@gmail.com</li>
+      </ul>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>You will be notified when something new will be appear.</p>
+
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address *">
+        <button><i class="fa-solid fa-envelope"></i></button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    Copyright © 2023 | All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
