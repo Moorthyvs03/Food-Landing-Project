@@ -21,7 +21,7 @@
             <h2 class="logo">LUXE LOFT🍹</h2>
 
             <ul>
-                <li class="home"><a href="./home.html">HOME</a></li>
+                <li class="home"><a href="./index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT</a></li>
                 <li><a href="./gallery.html">GALLERY</a></li>
                 <li><a href="./menu.html">MENU</a></li>
@@ -121,46 +121,6 @@
 
 </body>
 
-<script>
-    function Login() {
-        var n1 = document.getElementById("i1").value;
-        var n2 = document.getElementById("i2").value;
-        var n3 = document.getElementById("i3").value;
-        var n4 = document.getElementById("i4").value;
-
-        var alpha = /^[a-zA-Z]+$/;
-        var number = /^[0-9]{10}$/;
-        var gmail = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
-        var password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&*]).{6,}$/;
-
-        if (n1 === "") {
-            alert("Enter the name");
-        }
-        else if (!alpha.test(n1)) {
-            alert("Name must contain alphabets");
-        }
-        else if (n2 === "") {
-            alert("Enter mobile number");
-        }
-        else if (!number.test(n2)) {
-            alert("Mobile number must contain 10 digits");
-        }
-        else if (n3 === "") {
-            alert("Enter your Gmail");
-        }
-        else if (!gmail.test(n3)) {
-            alert("Enter a valid Gmail address");
-        }
-        else if (n4 === "") {
-            alert("Enter the password");
-        }
-        else if (!password.test(n4)) {
-            alert("Password does not meet the requirements");
-        }
-        else {
-            alert("✔ Register successfully");
-        }
-    }
-</script>
+<script src="./food.js"> </script>
 
 </html>

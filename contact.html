@@ -25,7 +25,7 @@
             <h2 class="logo">LUXE LOFT🍹</h2>
 
             <ul>
-                <li class="home"><a href="./home.html">HOME</a></li>
+                <li class="home"><a href="./index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT</a></li>
                 <li><a href="./gallery.html">GALLERY</a></li>
                 <li><a href="./menu.html">MENU</a></li>
@@ -162,25 +162,6 @@
         </footer>
     </body>
 
-    <script>
-
-        document.getElementById("contactForm").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const name = document.getElementById("name").value.trim();
-            const phone = document.getElementById("phone").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const message = document.getElementById("message").value.trim();
-
-            if (!name || !phone || !email || !message) {
-                alert("❌ Please fill all fields");
-                return;
-            }
-
-            alert("✅ Message sent successfully!");
-
-            this.reset();
-        });
-    </script>
+    <script src="./food.js"></script>
 
 </html>

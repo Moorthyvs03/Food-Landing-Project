@@ -25,7 +25,7 @@
             <h2 class="logo">LUXE LOFT🍹</h2>
 
             <ul>
-                <li class="home"><a href="./home.html">HOME</a></li>
+                <li class="home"><a href="./index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT</a></li>
                 <li><a href="./gallery.html">GALLERY</a></li>
                 <li><a href="./menu.html">MENU</a></li>
@@ -226,56 +226,10 @@
         </div>
     </footer>
 
+    <script src="./food.js"></script>
 </body>
 
-<script>
 
-
-
-    document.getElementById("reservationForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        let fname = document.getElementById("fname").value.trim();
-        let lname = document.getElementById("lname").value.trim();
-        let phone = document.getElementById("phone").value.trim();
-        let date = document.getElementById("date").value;
-        let table = document.getElementById("table").value;
-        let email = document.getElementById("email").value.trim();
-        let notes = document.getElementById("notes").value.trim();
-
-        if (!fname || !lname || !phone || !date || !table || !email || !notes) {
-            alert("❌ Please fill all required fields");
-            return;
-        }
-
-        alert("✅ Reservation submitted successfully!");
-
-        // Clear form
-        document.getElementById("reservationForm").reset();
-    });
-
-
-    function demo() {
-
-        var n1 = document.getElementById("email").value;
-
-        var gmail = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
-
-        if (n1 === "") {
-            alert("Enter email address");
-            return false;
-        }
-        else if (!gmail.test(n1)) {
-            alert("Enter a valid email");
-            return false;
-        }
-        else {
-            alert("✔ Sign up submitted successfully!");
-            return true;
-        }
-    }
-
-</script>
 
 
 </html>

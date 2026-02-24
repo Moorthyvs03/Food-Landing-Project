@@ -228,7 +228,7 @@ body {
             <h2 class="logo">LUXE LOFT🍹</h2>
 
             <ul>
-                <li class="home"><a href="./home.html">HOME</a></li>
+                <li class="home"><a href="./index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT</a></li>
                 <li><a href="./gallery.html">GALLERY</a></li>
                 <li><a href="./menu.html">MENU</a></li>
@@ -366,28 +366,5 @@ body {
         </div>
     </footer>
 </body>
-<script>
-    const buttons = document.querySelectorAll('.li01');
-    const items = document.querySelectorAll('.gallery-item');
-
-    buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-
-            // active button
-            buttons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            const filter = btn.getAttribute('data-filter');
-
-            items.forEach(item => {
-                if (filter === 'ALL' || item.getAttribute('data-category') === filter) {
-                    item.classList.remove('hide');
-                } else {
-                    item.classList.add('hide');
-                }
-            });
-        });
-    });
-</script>
-
+<script src="./food.js"></script>
 </html>
